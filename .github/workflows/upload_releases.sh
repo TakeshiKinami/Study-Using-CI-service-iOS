@@ -57,6 +57,5 @@ else
     parseUploadUrlFromResponse
 fi
 
-
 curl -X POST -H "Authorization: token $TOKEN" \
-    -H "Content-Type: application/zip" --data-binary out_archive_without_sign.zip $UPLOAD_URL
+    -H "Content-Type: application/zip" --data-binary @out_archive_without_sign.zip $UPLOAD_URL
